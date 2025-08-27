@@ -3,4 +3,5 @@
 
 sysinfo: shows system info\
 exit: exits thshell\
-clear: clears console\
+
+clear: clears console
