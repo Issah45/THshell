@@ -3,7 +3,7 @@ import sys, os, datetime
 from apps.notepad import Notepad
 
 os.system("cls")
-version = (0, 1, 1, 0)
+version = '0.1.1.1'
 
 print("""█████ █   █ █████ █   █ █████ █     █     
   █   █   █ █     █   █ █     █     █     
@@ -22,9 +22,9 @@ while True:
         sys.exit()
     elif command == "clear":
         os.system("cls")
-    elif command == "time":
+    elif command == "datetime":
         print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     elif command == "notepad":
         Notepad()
     else:
-        print("command not found.")
+        print("Command not found.")

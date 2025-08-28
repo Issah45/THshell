@@ -7,7 +7,7 @@ exit: exits thshell
 
 clear: clears console
 
-time: shows the time
+datetime: shows the time
 
 
 

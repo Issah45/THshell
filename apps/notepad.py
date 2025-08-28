@@ -1,9 +1,13 @@
 
+import os
+
 def Notepad():
     while True:
         command = input("Notepad > ")
         if command == "exit":
             break
+        elif command == "clear":
+            os.system("cls")
         elif command == "file":
             filename = input("File Name > ")
             file = open(f"{filename}.txt", "a+")
@@ -23,6 +27,6 @@ def Notepad():
                 elif cmd == "clear":
                     file = open(f"{filename}.txt", "w+")
                 else:
-                    print("command not found.")
+                    print("Command not found.")
         else:
-            print("command not found.")
+            print("Command not found.")
