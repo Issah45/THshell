@@ -1,8 +1,9 @@
 import sys, os, datetime
 
+from apps.notepad import Notepad
 
 os.system("cls")
-version = (0, 1, 0, 0)
+version = (0, 1, 1, 0)
 
 print("""█████ █   █ █████ █   █ █████ █     █     
   █   █   █ █     █   █ █     █     █     
@@ -11,25 +12,19 @@ print("""█████ █   █ █████ █   █ █████ █
   █   █   █ █████ █   █ █████ █████ █████ """)
 print(f"THShell Version {version}\n")
 
-
-
-def sysinfo():
-    print(f"Version {version}")
-
-def exit():
-    sys.exit()
-
 while True:
     command = input("THshell > ")
 
 
     if command == "sysinfo":
-        sysinfo()
+        print(f"THshell Version {version}")
     elif command == "exit":
-        exit()
+        sys.exit()
     elif command == "clear":
         os.system("cls")
     elif command == "time":
         print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+    elif command == "notepad":
+        Notepad()
     else:
         print("command not found.")
