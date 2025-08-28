@@ -16,11 +16,10 @@ time: shows the time
 
 file: opens a file (or creates one )
 
-
-
 append: adds to the file
 
 clear: clears the file
 
 view: views the file
+
 
